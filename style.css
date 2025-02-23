@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.profile-header {
+  background: linear-gradient(
+    45deg,
+    rgba(27, 14, 219, 0.5),
+    rgba(175, 250, 0, 0.541)
+  );
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.profile-header h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.profile-header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.content {
+  padding: 30px;
+  text-align: center; /* Căn giữa toàn bộ nội dung trong content */
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block; /* Để căn giữa chính xác với ::after */
+}
+
+.section h2::after {
+  content: "";
+  width: 400px; /*chỉnh độ dài của thanh nằm ngang*/
+  height: 2px;
+  background: #e74c3c;
+  position: absolute;
+  bottom: -5px;
+  left: 50%; /* Đặt ở giữa */
+  transform: translateX(-50%); /* Căn giữa hoàn toàn */
+}
+
+.section p {
+  max-width: 700px; /* Giới hạn chiều rộng đoạn văn */
+  margin: 0 auto; /* Căn giữa đoạn văn */
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* Căn giữa danh sách kỹ năng */
+}
+
+.skills-list li {
+  background: white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.9em;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+}
+
+.projects-list {
+  list-style: none;
+  max-width: 700px; /* Giới hạn chiều rộng danh sách dự án */
+  margin: 0 auto; /* Căn giữa danh sách dự án */
+}
+
+.projects-list li {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.projects-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.projects-list a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects-list a:hover {
+  color: #c0392b;
+}
