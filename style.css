@@ -33,6 +33,12 @@ body {
   cursor: pointer;
 }
 
+/*chỉnh hiệu ứng hover cho các thẻ h1 và p*/
+.profile-header p:hover, .profile-header h1:hover{
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
 .profile-header img {
   width: 120px;
   height: 120px;
