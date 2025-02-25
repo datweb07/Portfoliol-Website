@@ -71,7 +71,7 @@ body {
 
 .section h2::after {
   content: "";
-  width: 400px; /*chỉnh độ dài của thanh nằm ngang*/
+  width: 250px; /*chỉnh độ dài của thanh nằm ngang*/
   height: 2px;
   background: #e74c3c;
   position: absolute;
